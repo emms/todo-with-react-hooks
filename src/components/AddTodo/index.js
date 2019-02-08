@@ -6,6 +6,7 @@ export default function AddTodo({ saveTodo }) {
   function handleSubmit(event) {
     event.preventDefault()
     saveTodo(todoText)
+    setTodoText('')
   }
 
   return (
